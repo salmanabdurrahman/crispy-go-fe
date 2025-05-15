@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import ContactHero from "../features/contact/ContactHero.jsx";
-import ContactFAQ from "../features/contact/ContactFAQ.jsx";
-import ContactForm from "../features/contact/ContactForm.jsx";
+import ContactHero from "../features/contact/components/ContactHero.jsx";
+import ContactFAQ from "../features/contact/components/ContactFAQ.jsx";
+import ContactForm from "../features/contact/components/ContactForm.jsx";
 
 const ContactPage = () => {
 	const [formData, setFormData] = useState({
