@@ -13,11 +13,11 @@ const Navbar = () => {
 	const navItems = [
 		{ name: "Beranda", path: "/" },
 		{ name: "Menu", path: "/menu" },
-		{ name: "Tentang Kami", path: "/about" },
 		{ name: "Blog", path: "/blog" },
-		{ name: "FAQ", path: "/faq" },
 		{ name: "Lokasi", path: "/locations" },
-		{ name: "Karir", path: "/careers" },
+		// { name: "Karir", path: "/careers" },
+		// { name: "FAQ", path: "/faq" },
+		{ name: "Tentang Kami", path: "/about" },
 		{ name: "Kontak", path: "/contact" },
 	];
 

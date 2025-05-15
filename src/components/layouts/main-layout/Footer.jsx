@@ -53,23 +53,18 @@ const Footer = () => {
 						<h3 className="mb-4 text-xl font-bold">Quick Links</h3>
 						<ul className="space-y-2">
 							<li>
+								<Link to="/" className="hover:text-crispygo-rust text-gray-300 transition-colors">
+									Beranda
+								</Link>
+							</li>
+							<li>
 								<Link to="/menu" className="hover:text-crispygo-rust text-gray-300 transition-colors">
 									Menu
 								</Link>
 							</li>
 							<li>
-								<Link to="/about" className="hover:text-crispygo-rust text-gray-300 transition-colors">
-									Tentang Kami
-								</Link>
-							</li>
-							<li>
 								<Link to="/blog" className="hover:text-crispygo-rust text-gray-300 transition-colors">
 									Blog
-								</Link>
-							</li>
-							<li>
-								<Link to="/faq" className="hover:text-crispygo-rust text-gray-300 transition-colors">
-									FAQ
 								</Link>
 							</li>
 							<li>
@@ -80,12 +75,22 @@ const Footer = () => {
 									Lokasi
 								</Link>
 							</li>
-							<li>
+							{/* <li>
 								<Link
 									to="/careers"
 									className="hover:text-crispygo-rust text-gray-300 transition-colors"
 								>
 									Karir
+								</Link>
+							</li>
+							<li>
+								<Link to="/faq" className="hover:text-crispygo-rust text-gray-300 transition-colors">
+									FAQ
+								</Link>
+							</li> */}
+							<li>
+								<Link to="/about" className="hover:text-crispygo-rust text-gray-300 transition-colors">
+									Tentang Kami
 								</Link>
 							</li>
 							<li>
@@ -112,7 +117,7 @@ const Footer = () => {
 							</li>
 							<li className="flex items-center">
 								<Mail className="text-crispygo-rust mr-3 h-5 w-5 flex-shrink-0" />
-								<span className="text-gray-300">info@crispygo.com</span>
+								<span className="text-gray-300">info@crispygo.store</span>
 							</li>
 						</ul>
 					</div>
