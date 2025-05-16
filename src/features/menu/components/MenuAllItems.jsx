@@ -11,19 +11,21 @@ const MenuAllItems = ({ menuItems, activeCategory }) => {
 					.filter(item => activeCategory === "all" || item.category === activeCategory)
 					.map(item => (
 						<div key={item.id} className="card group overflow-hidden">
-							{/* {item.is_bestseller && (
-								<div className="absolute right-0 top-0 z-10 rounded-bl-lg bg-crispygo-rust px-3 py-1 text-white">
-									Best Seller
+							<div className="relative">
+								{item.is_bestseller === 1 && (
+									<div className="absolute right-0 top-0 z-10 rounded-bl-lg bg-crispygo-rust px-3 py-1 text-white">
+										Best Seller
+									</div>
+								)}
+								<div className="relative h-60">
+									<img
+										src={`${STORAGE_URL}/${item.image}`}
+										className="h-full w-full object-fill transition-transform duration-300 group-hover:scale-105"
+										alt={item.name}
+										title={item.name}
+										loading="lazy"
+									/>
 								</div>
-							)} */}
-							<div className="relative h-60">
-								<img
-									src={`${STORAGE_URL}/${item.image}`}
-									className="h-full w-full object-fill transition-transform duration-300 group-hover:scale-105"
-									alt={item.name}
-									title={item.name}
-									loading="lazy"
-								/>
 							</div>
 							<div className="p-6">
 								<div className="mb-2 flex items-center justify-between">
