@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const LocationCallToAction = () => {
 	return (
 		<section className="section bg-crispygo-rust text-white">
@@ -7,7 +9,9 @@ const LocationCallToAction = () => {
 					<p className="mb-8 mt-4 text-white/90">
 						Pesan sekarang dan nikmati kelezatan CrispyGo. Tersedia untuk dine-in, take away, atau delivery.
 					</p>
-					<button className="btn text-crispygo-rust hover:bg-crispygo-cream bg-white">Pesan Online</button>
+					<Link to="/order" className="btn bg-white text-crispygo-rust hover:bg-crispygo-cream">
+						Pesan Online
+					</Link>
 				</div>
 			</div>
 		</section>
