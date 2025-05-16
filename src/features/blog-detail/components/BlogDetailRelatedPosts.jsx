@@ -21,7 +21,7 @@ const BlogDetailRelatedPosts = ({ relatedPosts }) => {
 							<div>
 								<h5 className="mb-1 line-clamp-2 font-bold">
 									<Link
-										to={`/blog/${post.slug}`}
+										to={`/blogs/${post.slug}`}
 										className="transition-colors hover:text-crispygo-rust"
 									>
 										{post.title}

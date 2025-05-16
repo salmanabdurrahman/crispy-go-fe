@@ -10,7 +10,7 @@ const BlogSidebar = ({ categories, data }) => {
 					{categories.map(category => (
 						<li key={category.id}>
 							<Link
-								to={`/blog/category/${category.id}`}
+								to={`/blogs/category/${category.id}`}
 								className="flex items-center justify-between py-2 transition-colors hover:text-crispygo-rust"
 							>
 								<span>{category.name}</span>

@@ -41,12 +41,12 @@ const HomeBlog = () => {
 								/>
 							</div>
 							<div className="p-6">
-								<p className="text-crispygo-rust mb-2 text-sm">{blog.date}</p>
+								<p className="mb-2 text-sm text-crispygo-rust">{blog.date}</p>
 								<h3 className="mb-2 text-xl font-bold">{blog.title}</h3>
 								<p className="mb-4 text-gray-600">{blog.excerpt}</p>
 								<Link
-									to="/blog"
-									className="text-crispygo-rust flex items-center font-medium hover:underline"
+									to="/blogs"
+									className="flex items-center font-medium text-crispygo-rust hover:underline"
 								>
 									Baca Selengkapnya <ChevronRight className="ml-1 h-4 w-4" />
 								</Link>
@@ -55,7 +55,7 @@ const HomeBlog = () => {
 					))}
 				</div>
 				<div className="mt-12 text-center">
-					<Link to="/blog" className="btn btn-primary">
+					<Link to="/blogs" className="btn btn-primary">
 						Lihat Semua Artikel
 					</Link>
 				</div>

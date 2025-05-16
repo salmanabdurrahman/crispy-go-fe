@@ -31,7 +31,7 @@ const BlogAllArticles = ({ filteredArticles, categories }) => {
 								<div className="flex items-center justify-between">
 									<span className="text-sm text-gray-600">By Admin</span>
 									<Link
-										to={`/blog/${article.slug}`}
+										to={`/blogs/${article.slug}`}
 										className="flex items-center font-medium text-crispygo-rust hover:underline"
 									>
 										Baca <ChevronRight className="ml-1 h-4 w-4" />

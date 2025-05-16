@@ -28,7 +28,7 @@ const BlogNewArticle = ({ newArticle, categories }) => {
 					<div className="flex items-center justify-between">
 						<span className="text-sm text-gray-600">By Admin</span>
 						<Link
-							to={`/blog/${newArticle.slug}`}
+							to={`/blogs/${newArticle.slug}`}
 							className="flex items-center font-medium text-crispygo-rust hover:underline"
 						>
 							Baca Selengkapnya <ChevronRight className="ml-1 h-4 w-4" />
