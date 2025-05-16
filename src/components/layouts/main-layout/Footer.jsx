@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin, Github } from "lucide-react";
 
 const Footer = () => {
 	// Current year for copyright
@@ -19,29 +19,41 @@ const Footer = () => {
 						</p>
 						<div className="flex space-x-4">
 							<a
+								href="https://www.instagram.com/crispygoofficial"
+								target="_blank"
+								className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-crispygo-rust"
+								aria-label="Instagram"
+							>
+								<Instagram className="h-4 w-4" />
+							</a>
+							<a
+								href="https://github.com/salmanabdurrahman/crispy-go-fe"
+								target="_blank"
+								className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-crispygo-rust"
+								aria-label="Instagram"
+							>
+								<Github className="h-4 w-4" />
+							</a>
+							<a
 								href="#"
-								className="hover:bg-crispygo-rust flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors"
+								target="_blank"
+								className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-crispygo-rust"
 								aria-label="Facebook"
 							>
 								<Facebook className="h-4 w-4" />
 							</a>
 							<a
 								href="#"
-								className="hover:bg-crispygo-rust flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors"
+								target="_blank"
+								className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-crispygo-rust"
 								aria-label="Twitter"
 							>
 								<Twitter className="h-4 w-4" />
 							</a>
 							<a
 								href="#"
-								className="hover:bg-crispygo-rust flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors"
-								aria-label="Instagram"
-							>
-								<Instagram className="h-4 w-4" />
-							</a>
-							<a
-								href="#"
-								className="hover:bg-crispygo-rust flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors"
+								target="_blank"
+								className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-crispygo-rust"
 								aria-label="Youtube"
 							>
 								<Youtube className="h-4 w-4" />
@@ -53,24 +65,24 @@ const Footer = () => {
 						<h3 className="mb-4 text-xl font-bold">Quick Links</h3>
 						<ul className="space-y-2">
 							<li>
-								<Link to="/" className="hover:text-crispygo-rust text-gray-300 transition-colors">
+								<Link to="/" className="text-gray-300 transition-colors hover:text-crispygo-rust">
 									Beranda
 								</Link>
 							</li>
 							<li>
-								<Link to="/menu" className="hover:text-crispygo-rust text-gray-300 transition-colors">
+								<Link to="/menu" className="text-gray-300 transition-colors hover:text-crispygo-rust">
 									Menu
 								</Link>
 							</li>
 							<li>
-								<Link to="/blog" className="hover:text-crispygo-rust text-gray-300 transition-colors">
+								<Link to="/blog" className="text-gray-300 transition-colors hover:text-crispygo-rust">
 									Blog
 								</Link>
 							</li>
 							<li>
 								<Link
 									to="/locations"
-									className="hover:text-crispygo-rust text-gray-300 transition-colors"
+									className="text-gray-300 transition-colors hover:text-crispygo-rust"
 								>
 									Lokasi
 								</Link>
@@ -89,14 +101,14 @@ const Footer = () => {
 								</Link>
 							</li> */}
 							<li>
-								<Link to="/about" className="hover:text-crispygo-rust text-gray-300 transition-colors">
+								<Link to="/about" className="text-gray-300 transition-colors hover:text-crispygo-rust">
 									Tentang Kami
 								</Link>
 							</li>
 							<li>
 								<Link
 									to="/contact"
-									className="hover:text-crispygo-rust text-gray-300 transition-colors"
+									className="text-gray-300 transition-colors hover:text-crispygo-rust"
 								>
 									Kontak
 								</Link>
@@ -108,15 +120,17 @@ const Footer = () => {
 						<h3 className="mb-4 text-xl font-bold">Kontak</h3>
 						<ul className="space-y-4">
 							<li className="flex items-start">
-								<MapPin className="text-crispygo-rust mr-3 mt-1 h-5 w-5 flex-shrink-0" />
-								<span className="text-gray-300">Jl. Crispy No. 123, Jakarta Selatan, Indonesia</span>
+								<MapPin className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-crispygo-rust" />
+								<span className="text-gray-300">
+									Condongcatur, Kabupaten Sleman, Daerah Istimewa Yogyakarta
+								</span>
 							</li>
 							<li className="flex items-center">
-								<Phone className="text-crispygo-rust mr-3 h-5 w-5 flex-shrink-0" />
+								<Phone className="mr-3 h-5 w-5 flex-shrink-0 text-crispygo-rust" />
 								<span className="text-gray-300">+62 812 3456 7890</span>
 							</li>
 							<li className="flex items-center">
-								<Mail className="text-crispygo-rust mr-3 h-5 w-5 flex-shrink-0" />
+								<Mail className="mr-3 h-5 w-5 flex-shrink-0 text-crispygo-rust" />
 								<span className="text-gray-300">info@crispygo.store</span>
 							</li>
 						</ul>
@@ -131,12 +145,12 @@ const Footer = () => {
 							<input
 								type="email"
 								placeholder="Email Anda"
-								className="focus:ring-crispygo-rust w-full rounded-md border border-white/20 bg-white/10 px-4 py-2 text-white focus:outline-none focus:ring-2"
+								className="w-full rounded-md border border-white/20 bg-white/10 px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-crispygo-rust"
 								required
 							/>
 							<button
 								type="submit"
-								className="bg-crispygo-rust hover:bg-crispygo-orange w-full rounded-md py-2 text-white transition-colors"
+								className="w-full rounded-md bg-crispygo-rust py-2 text-white transition-colors hover:bg-crispygo-orange"
 							>
 								Subscribe
 							</button>
@@ -152,13 +166,13 @@ const Footer = () => {
 						<div className="mt-4 flex space-x-4 md:mt-0">
 							<Link
 								to="/privacy-policy"
-								className="hover:text-crispygo-rust text-sm text-gray-400 transition-colors"
+								className="text-sm text-gray-400 transition-colors hover:text-crispygo-rust"
 							>
 								Privacy Policy
 							</Link>
 							<Link
 								to="/terms-of-service"
-								className="hover:text-crispygo-rust text-sm text-gray-400 transition-colors"
+								className="text-sm text-gray-400 transition-colors hover:text-crispygo-rust"
 							>
 								Terms of Service
 							</Link>

@@ -50,7 +50,7 @@ const Navbar = () => {
 				<div className="flex items-center justify-between">
 					{/* Logo */}
 					<Link to="/" className="flex items-center">
-						<span className="text-crispygo-rust text-2xl font-bold">CrispyGo</span>
+						<span className="text-[28px] font-extrabold text-crispygo-rust">CrispyGo</span>
 					</Link>
 					{/* Desktop Navigation */}
 					<nav className="hidden items-center space-x-6 lg:flex">
@@ -82,9 +82,9 @@ const Navbar = () => {
 						aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
 					>
 						{isMenuOpen ? (
-							<X className="text-crispygo-dark h-6 w-6" />
+							<X className="h-6 w-6 text-crispygo-dark" />
 						) : (
-							<Menu className="text-crispygo-dark h-6 w-6" />
+							<Menu className="h-6 w-6 text-crispygo-dark" />
 						)}
 					</button>
 				</div>
