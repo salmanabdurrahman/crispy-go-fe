@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const HomeHero = () => {
 	return (
-		<section className="bg-crispygo-dark relative overflow-hidden py-20 text-white md:py-32">
+		<section className="relative overflow-hidden bg-crispygo-dark py-20 text-white md:py-32">
 			<div className="absolute inset-0 opacity-30">
 				<img
 					src="/placeholder.svg?height=800&width=1600"
@@ -21,12 +21,12 @@ const HomeHero = () => {
 							autentik yang akan memanjakan lidah Anda.
 						</p>
 						<div className="flex flex-wrap gap-4">
-							<Link to="/menu" className="btn btn-primary">
+							<Link to="/menus" className="btn btn-primary">
 								Lihat Menu
 							</Link>
 							<Link
 								to="/locations"
-								className="btn btn-outline hover:text-crispygo-dark border-white text-white hover:bg-white"
+								className="btn btn-outline border-white text-white hover:bg-white hover:text-crispygo-dark"
 							>
 								Temukan Outlet
 							</Link>

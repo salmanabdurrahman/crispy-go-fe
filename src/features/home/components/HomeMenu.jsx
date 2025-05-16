@@ -24,7 +24,7 @@ const HomeMenu = () => {
 							<div className="p-6">
 								<div className="mb-2 flex items-center justify-between">
 									<h3 className="text-xl font-bold">Crispy Chicken {item}</h3>
-									<span className="text-crispygo-rust font-bold">Rp 45.000</span>
+									<span className="font-bold text-crispygo-rust">Rp 45.000</span>
 								</div>
 								<p className="mb-4 text-gray-600">
 									Ayam crispy dengan bumbu rahasia dan tekstur renyah yang sempurna.
@@ -37,8 +37,8 @@ const HomeMenu = () => {
 										<span className="ml-2 text-sm text-gray-600">4.9 (120)</span>
 									</div>
 									<Link
-										to="/menu"
-										className="text-crispygo-rust flex items-center font-medium hover:underline"
+										to="/menus"
+										className="flex items-center font-medium text-crispygo-rust hover:underline"
 									>
 										Detail <ChevronRight className="ml-1 h-4 w-4" />
 									</Link>
@@ -48,7 +48,7 @@ const HomeMenu = () => {
 					))}
 				</div>
 				<div className="mt-12 text-center">
-					<Link to="/menu" className="btn btn-primary">
+					<Link to="/menus" className="btn btn-primary">
 						Lihat Semua Menu
 					</Link>
 				</div>

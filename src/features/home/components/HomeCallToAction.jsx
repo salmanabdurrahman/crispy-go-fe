@@ -11,12 +11,12 @@ const HomeCallToAction = () => {
 						take away, atau delivery.
 					</p>
 					<div className="flex flex-wrap justify-center gap-4">
-						<Link to="/menu" className="btn text-crispygo-rust hover:bg-crispygo-cream bg-white">
+						<Link to="/menus" className="btn bg-white text-crispygo-rust hover:bg-crispygo-cream">
 							Pesan Online
 						</Link>
 						<Link
 							to="/locations"
-							className="btn hover:text-crispygo-rust border-2 border-white text-white hover:bg-white"
+							className="btn border-2 border-white text-white hover:bg-white hover:text-crispygo-rust"
 						>
 							Kunjungi Outlet
 						</Link>
