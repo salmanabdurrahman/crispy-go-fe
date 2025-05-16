@@ -23,6 +23,7 @@ const AboutTeam = () => {
 									src={`/placeholder.svg?height=256&width=256&text=${member.name}`}
 									alt={member.name}
 									className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+									loading="lazy"
 								/>
 							</div>
 							<div className="p-4 text-center">

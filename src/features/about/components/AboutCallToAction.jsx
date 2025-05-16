@@ -10,12 +10,12 @@ const AboutCallToAction = () => {
 						Kami selalu mencari talenta-talenta baru untuk bergabung dengan tim kami
 					</p>
 					<div className="flex flex-wrap justify-center gap-4">
-						<Link to="/careers" className="btn text-crispygo-rust hover:bg-crispygo-cream bg-white">
+						<Link to="/careers" className="btn bg-white text-crispygo-rust hover:bg-crispygo-cream">
 							Lihat Karir
 						</Link>
 						<Link
 							to="/contact"
-							className="btn hover:text-crispygo-rust border-2 border-white text-white hover:bg-white"
+							className="btn border-2 border-white text-white hover:bg-white hover:text-crispygo-rust"
 						>
 							Hubungi Kami
 						</Link>

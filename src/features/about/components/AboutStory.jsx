@@ -7,22 +7,23 @@ const AboutStory = () => {
 						<h2 className="mb-6 text-3xl font-bold">Cerita Kami</h2>
 						<div className="space-y-4">
 							<p>
-								CrispyGo didirikan pada tahun 2013 oleh sekelompok pecinta kuliner yang memiliki visi
-								untuk menciptakan makanan crispy berkualitas tinggi dengan cita rasa autentik yang dapat
-								dinikmati oleh semua kalangan.
+								CrispyGo didirikan pada tahun 2013 di Yogyakarta oleh sekelompok pecinta kuliner yang
+								memiliki visi untuk menghadirkan makanan crispy berkualitas tinggi dengan cita rasa
+								autentik khas Indonesia.
 							</p>
 							<p>
-								Berawal dari satu outlet kecil di Jakarta Selatan, CrispyGo terus berkembang dan kini
-								telah memiliki lebih dari 50 outlet yang tersebar di berbagai kota di Indonesia.
+								Berawal dari satu outlet sederhana di jantung kota Jogja, CrispyGo terus tumbuh dan
+								mendapat tempat di hati para pecinta kuliner. Kini, kami telah berkembang menjadi
+								jaringan dengan 10 outlet yang tersebar di berbagai kota besar di Indonesia.
 							</p>
 							<p>
-								Kami berkomitmen untuk selalu menggunakan bahan-bahan berkualitas tinggi dan resep
-								rahasia yang dikembangkan selama bertahun-tahun untuk menciptakan pengalaman kuliner
-								yang tak terlupakan bagi pelanggan kami.
+								Komitmen kami adalah selalu menggunakan bahan-bahan berkualitas tinggi dan resep rahasia
+								yang dikembangkan secara konsisten selama bertahun-tahun untuk memberikan pengalaman
+								kuliner yang tak terlupakan.
 							</p>
 							<p>
-								Setiap gigitan dari produk CrispyGo adalah hasil dari dedikasi dan passion kami terhadap
-								kualitas dan inovasi dalam dunia kuliner.
+								Setiap gigitan dari produk CrispyGo adalah bukti nyata dari dedikasi kami terhadap rasa,
+								kualitas, dan inovasi dalam dunia kuliner.
 							</p>
 						</div>
 					</div>
@@ -31,6 +32,7 @@ const AboutStory = () => {
 							src="/placeholder.svg?height=400&width=600&text=Our+Story"
 							alt="CrispyGo Story"
 							className="h-full w-full object-cover"
+							loading="lazy"
 						/>
 					</div>
 				</div>

@@ -12,8 +12,8 @@ const AboutValues = () => {
 				</div>
 				<div className="grid gap-6 md:grid-cols-4">
 					<div className="card p-6 text-center">
-						<div className="bg-crispygo-cream mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full">
-							<Award className="text-crispygo-rust h-8 w-8" />
+						<div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-crispygo-cream">
+							<Award className="h-8 w-8 text-crispygo-rust" />
 						</div>
 						<h3 className="mb-2 text-xl font-bold">Kualitas</h3>
 						<p className="text-gray-600">
@@ -21,8 +21,8 @@ const AboutValues = () => {
 						</p>
 					</div>
 					<div className="card p-6 text-center">
-						<div className="bg-crispygo-cream mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full">
-							<Heart className="text-crispygo-rust h-8 w-8" />
+						<div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-crispygo-cream">
+							<Heart className="h-8 w-8 text-crispygo-rust" />
 						</div>
 						<h3 className="mb-2 text-xl font-bold">Passion</h3>
 						<p className="text-gray-600">
@@ -30,8 +30,8 @@ const AboutValues = () => {
 						</p>
 					</div>
 					<div className="card p-6 text-center">
-						<div className="bg-crispygo-cream mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full">
-							<Target className="text-crispygo-rust h-8 w-8" />
+						<div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-crispygo-cream">
+							<Target className="h-8 w-8 text-crispygo-rust" />
 						</div>
 						<h3 className="mb-2 text-xl font-bold">Inovasi</h3>
 						<p className="text-gray-600">
@@ -39,8 +39,8 @@ const AboutValues = () => {
 						</p>
 					</div>
 					<div className="card p-6 text-center">
-						<div className="bg-crispygo-cream mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full">
-							<Users className="text-crispygo-rust h-8 w-8" />
+						<div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-crispygo-cream">
+							<Users className="h-8 w-8 text-crispygo-rust" />
 						</div>
 						<h3 className="mb-2 text-xl font-bold">Pelayanan</h3>
 						<p className="text-gray-600">

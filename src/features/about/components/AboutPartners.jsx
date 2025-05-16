@@ -13,6 +13,7 @@ const AboutPartners = () => {
 								src={`/placeholder.svg?height=80&width=160&text=Partner+${partner}`}
 								alt={`Partner ${partner}`}
 								className="mx-auto h-20 w-full object-contain"
+								loading="lazy"
 							/>
 						</div>
 					))}
