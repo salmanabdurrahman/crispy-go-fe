@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import toast from "react-hot-toast";
+import useContact from "../hooks/useContact.js";
 
 const initialFormData = {
 	name: "",
@@ -11,17 +13,19 @@ const initialFormData = {
 
 const ContactForm = () => {
 	const [formData, setFormData] = useState(initialFormData);
+	const { isLoading, submitContact } = useContact();
 
 	const handleChange = e => {
 		const { name, value } = e.target;
 		setFormData(prev => ({ ...prev, [name]: value }));
 	};
 
-	const handleSubmit = e => {
+	const handleSubmit = async e => {
 		e.preventDefault();
-		// Handle form submission logic here
-		console.log("Form submitted:", formData);
-		alert("Pesan Anda telah terkirim. Kami akan segera menghubungi Anda.");
+
+		await submitContact(formData);
+
+		toast.success("Pesan Anda telah terkirim. Kami akan segera menghubungi Anda");
 		setFormData(initialFormData);
 	};
 
@@ -167,7 +171,7 @@ const ContactForm = () => {
 								className="inline-flex items-center rounded-md bg-crispygo-rust px-6 py-3 font-medium text-white transition-colors hover:bg-crispygo-orange"
 							>
 								<Send className="mr-2 h-5 w-5" />
-								Kirim Pesan
+								{isLoading ? "Mengirim..." : "Kirim Pesan"}
 							</button>
 						</form>
 					</div>
