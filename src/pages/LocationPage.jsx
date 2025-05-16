@@ -24,9 +24,7 @@ const LocationPage = () => {
 
 	return (
 		<>
-			{/* Hero Section */}
 			<LocationHero />
-			{/* Map Section */}
 			<LocationMap
 				searchQuery={searchQuery}
 				setSearchQuery={setSearchQuery}
@@ -35,7 +33,6 @@ const LocationPage = () => {
 				outlets={filteredOutlets}
 				cities={cities}
 			/>
-			{/* Call to Action */}
 			<LocationCallToAction />
 		</>
 	);

@@ -25,16 +25,13 @@ const MenuPage = () => {
 
 	return (
 		<>
-			{/* Hero Section */}
 			<MenuHero />
-			{/* Menu Section */}
 			<MenuList
 				menuItems={data}
 				categories={categories}
 				activeCategory={activeCategory}
 				setActiveCategory={setActiveCategory}
 			/>
-			{/* Call to Action */}
 			<MenuCallToAction />
 		</>
 	);

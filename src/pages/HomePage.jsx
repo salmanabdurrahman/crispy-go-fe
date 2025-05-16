@@ -15,31 +15,18 @@ import HomeFAQ from "../features/home/components/HomeFAQ.jsx";
 const HomePage = () => {
 	return (
 		<>
-			{/* Hero Section */}
 			<HomeHero />
-			{/* CrispyGo dengan Angka */}
 			<HomeStats />
-			{/* Mengapa Memilih CrispyGo */}
 			<HomeWhyChoose />
-			{/* Proses Pembuatan */}
 			<HomeProcess />
-			{/* Menu Favorit Kami */}
 			<HomeMenu />
-			{/* Nikmati Kelezatan CrispyGo Sekarang Juga! */}
 			<HomeCallToAction />
-			{/* Cocok Untuk Berbagai Acara */}
 			<HomeEvents />
-			{/* Perjalanan CrispyGo */}
 			<HomeStory />
-			{/* Apa Kata Mereka? */}
 			<HomeTestimonials />
-			{/* Penghargaan Kami */}
 			<HomeAwards />
-			{/* Partner Bisnis Kami */}
 			<HomePartners />
-			{/* Blog & Artikel */}
 			<HomeBlog />
-			{/* Pertanyaan yang Sering Diajukan */}
 			<HomeFAQ />
 		</>
 	);

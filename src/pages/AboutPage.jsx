@@ -9,19 +9,12 @@ import AboutCallToAction from "../features/about/components/AboutCallToAction.js
 const AboutPage = () => {
 	return (
 		<>
-			{/* Hero Section */}
 			<AboutHero />
-			{/* Our Story Section */}
 			<AboutStory />
-			{/* Timeline Section */}
 			<AboutTimeline />
-			{/* Values Section */}
 			<AboutValues />
-			{/* Team Section */}
 			<AboutTeam />
-			{/* Partners Section */}
 			<AboutPartners />
-			{/* Call to Action */}
 			<AboutCallToAction />
 		</>
 	);

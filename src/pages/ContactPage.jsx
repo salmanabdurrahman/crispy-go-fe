@@ -35,11 +35,8 @@ const ContactPage = () => {
 
 	return (
 		<>
-			{/* Hero Section */}
 			<ContactHero />
-			{/* Contact Info & Form Section */}
 			<ContactForm formData={formData} onChange={handleChange} onSubmit={handleSubmit} />
-			{/* FAQ Section */}
 			<ContactFAQ />
 		</>
 	);

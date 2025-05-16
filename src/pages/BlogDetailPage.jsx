@@ -75,9 +75,7 @@ const BlogDetailPage = () => {
 
 	return (
 		<>
-			{/* Hero Section */}
 			<BlogDetailHero article={article} />
-			{/* Article Content */}
 			<BlogDetailArticle article={article} />
 		</>
 	);
