@@ -1,9 +1,27 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin, Github } from "lucide-react";
+import { toast } from "react-hot-toast";
+import useNewsletter from "../../../hooks/useNewsletter";
 
 const Footer = () => {
+	const [email, setEmail] = useState("");
+	const { isLoading, submitNewsletter } = useNewsletter();
 	// Current year for copyright
 	const currentYear = new Date().getFullYear();
+
+	const handleEmailChange = e => {
+		setEmail(e.target.value);
+	};
+
+	const handleSubmit = async e => {
+		e.preventDefault();
+
+		await submitNewsletter({ email });
+
+		toast.success("Terima kasih telah subscribe newsletter CrispyGo");
+		setEmail("");
+	};
 
 	return (
 		<footer className="bg-crispygo-dark text-white">
@@ -141,18 +159,22 @@ const Footer = () => {
 						<p className="mb-4 text-gray-300">
 							Dapatkan update terbaru dan promo menarik dari CrispyGo langsung ke inbox Anda.
 						</p>
-						<form className="space-y-2">
+						<form className="space-y-2" method="POST" onSubmit={handleSubmit}>
 							<input
 								type="email"
 								placeholder="Email Anda"
 								className="w-full rounded-md border border-white/20 bg-white/10 px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-crispygo-rust"
+								name="email"
 								required
+								value={email}
+								onChange={handleEmailChange}
 							/>
 							<button
 								type="submit"
 								className="w-full rounded-md bg-crispygo-rust py-2 text-white transition-colors hover:bg-crispygo-orange"
+								disabled={isLoading}
 							>
-								Subscribe
+								{isLoading ? "Mengirim..." : "Subscribe"}
 							</button>
 						</form>
 					</div>
