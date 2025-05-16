@@ -169,6 +169,7 @@ const ContactForm = () => {
 							<button
 								type="submit"
 								className="inline-flex items-center rounded-md bg-crispygo-rust px-6 py-3 font-medium text-white transition-colors hover:bg-crispygo-orange"
+								disabled={isLoading}
 							>
 								<Send className="mr-2 h-5 w-5" />
 								{isLoading ? "Mengirim..." : "Kirim Pesan"}
