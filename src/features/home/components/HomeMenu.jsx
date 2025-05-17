@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
-import { Star, ChevronRight } from "lucide-react";
+import useMenus from "./../../menu/hooks/useMenus";
+import LoadingSpinner from "./../../../components/common/spinner/LoadingSpinner.jsx";
+import { STORAGE_URL } from "../../../constants/appConfig.js";
 
 const HomeMenu = () => {
+	const { isLoading, data } = useMenus();
+
+	if (isLoading) return <LoadingSpinner />;
+
+	const menuItems = data.filter(item => item.is_bestseller === 1).slice(0, 3);
+
 	return (
 		<section className="section">
 			<div className="container-custom">
@@ -12,37 +20,33 @@ const HomeMenu = () => {
 					</p>
 				</div>
 				<div className="grid gap-8 md:grid-cols-3">
-					{[1, 2, 3].map(item => (
-						<div key={item} className="card group overflow-hidden">
+					{menuItems.map(item => (
+						<div key={item.id} className="card group overflow-hidden">
 							<div className="relative h-60">
+								{item.is_bestseller === 1 && (
+									<div className="absolute right-0 top-0 z-10 rounded-bl-lg bg-crispygo-rust px-3 py-1 text-white">
+										Best Seller
+									</div>
+								)}
 								<img
-									src={`/placeholder.svg?height=240&width=400&text=Menu+${item}`}
-									alt={`Menu Favorit ${item}`}
+									src={`${STORAGE_URL}/${item.image}`}
+									alt={item.name}
+									title={item.name}
 									className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+									loading="lazy"
 								/>
 							</div>
 							<div className="p-6">
 								<div className="mb-2 flex items-center justify-between">
-									<h3 className="text-xl font-bold">Crispy Chicken {item}</h3>
-									<span className="font-bold text-crispygo-rust">Rp 45.000</span>
+									<h3 className="text-xl font-bold">{item.name}</h3>
+									<span className="font-bold text-crispygo-rust">
+										{Intl.NumberFormat("id-ID", {
+											style: "currency",
+											currency: "IDR",
+										}).format(item.price)}
+									</span>
 								</div>
-								<p className="mb-4 text-gray-600">
-									Ayam crispy dengan bumbu rahasia dan tekstur renyah yang sempurna.
-								</p>
-								<div className="flex items-center justify-between">
-									<div className="flex items-center">
-										{[...Array(5)].map((_, i) => (
-											<Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-										))}
-										<span className="ml-2 text-sm text-gray-600">4.9 (120)</span>
-									</div>
-									<Link
-										to="/menus"
-										className="flex items-center font-medium text-crispygo-rust hover:underline"
-									>
-										Detail <ChevronRight className="ml-1 h-4 w-4" />
-									</Link>
-								</div>
+								<p className="mb-4 text-gray-600">{item.description}</p>
 							</div>
 						</div>
 					))}

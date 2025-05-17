@@ -5,12 +5,12 @@ import HomeProcess from "../features/home/components/HomeProcess.jsx";
 import HomeMenu from "../features/home/components/HomeMenu.jsx";
 import HomeCallToAction from "../features/home/components/HomeCallToAction.jsx";
 import HomeEvents from "../features/home/components/HomeEvents.jsx";
-import HomeStory from "../features/home/components/HomeStory.jsx";
 import HomeTestimonials from "./../features/home/components/HomeTestimonials";
 import HomeAwards from "../features/home/components/HomeAwards.jsx";
 import HomePartners from "../features/home/components/HomePartners.jsx";
 import HomeBlog from "../features/home/components/HomeBlog.jsx";
 import HomeFAQ from "../features/home/components/HomeFAQ.jsx";
+import AboutTimeline from "../features/about/components/AboutTimeline.jsx";
 
 const HomePage = () => {
 	return (
@@ -22,7 +22,7 @@ const HomePage = () => {
 			<HomeMenu />
 			<HomeCallToAction />
 			<HomeEvents />
-			<HomeStory />
+			<AboutTimeline />
 			<HomeTestimonials />
 			<HomeAwards />
 			<HomePartners />

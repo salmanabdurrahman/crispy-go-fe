@@ -11,7 +11,7 @@ const HomeCallToAction = () => {
 						take away, atau delivery.
 					</p>
 					<div className="flex flex-wrap justify-center gap-4">
-						<Link to="/menus" className="btn bg-white text-crispygo-rust hover:bg-crispygo-cream">
+						<Link to="/order" className="btn bg-white text-crispygo-rust hover:bg-crispygo-cream">
 							Pesan Online
 						</Link>
 						<Link

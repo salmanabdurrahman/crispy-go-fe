@@ -1,3 +1,5 @@
+import { process } from "../../../constants/homeData.js";
+
 const HomeProcess = () => {
 	return (
 		<section className="section bg-crispygo-dark text-white">
@@ -8,35 +10,16 @@ const HomeProcess = () => {
 						Setiap langkah dalam proses pembuatan kami dirancang untuk memastikan kualitas dan kelezatan
 					</p>
 				</div>
-				<div className="grid gap-6 md:grid-cols-4">
-					<div className="text-center">
-						<div className="bg-crispygo-orange mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full">
-							<span className="text-2xl font-bold">1</span>
+				<div className="grid gap-6 md:grid-cols-5">
+					{process.map((step, index) => (
+						<div className="text-center" key={index}>
+							<div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-crispygo-orange">
+								<span className="text-2xl font-bold">{step.number}</span>
+							</div>
+							<h3 className="mb-2 text-xl font-bold">{step.title}</h3>
+							<p className="text-white/80">{step.description}</p>
 						</div>
-						<h3 className="mb-2 text-xl font-bold">Seleksi Bahan</h3>
-						<p className="text-white/80">Pemilihan bahan berkualitas tinggi dari pemasok terpercaya</p>
-					</div>
-					<div className="text-center">
-						<div className="bg-crispygo-orange mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full">
-							<span className="text-2xl font-bold">2</span>
-						</div>
-						<h3 className="mb-2 text-xl font-bold">Marinasi</h3>
-						<p className="text-white/80">Proses marinasi dengan bumbu rahasia selama minimal 6 jam</p>
-					</div>
-					<div className="text-center">
-						<div className="bg-crispygo-orange mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full">
-							<span className="text-2xl font-bold">3</span>
-						</div>
-						<h3 className="mb-2 text-xl font-bold">Coating</h3>
-						<p className="text-white/80">Pelapisan dengan tepung khusus untuk tekstur renyah sempurna</p>
-					</div>
-					<div className="text-center">
-						<div className="bg-crispygo-orange mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full">
-							<span className="text-2xl font-bold">4</span>
-						</div>
-						<h3 className="mb-2 text-xl font-bold">Penggorengan</h3>
-						<p className="text-white/80">Digoreng dengan minyak berkualitas pada suhu yang tepat</p>
-					</div>
+					))}
 				</div>
 			</div>
 		</section>
