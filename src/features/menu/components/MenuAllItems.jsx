@@ -17,7 +17,7 @@ const MenuAllItems = ({ menuItems, activeCategory }) => {
 										Best Seller
 									</div>
 								)}
-								<div className="relative h-60">
+								<div className="relative h-[280px]">
 									<img
 										src={`${STORAGE_URL}/${item.image}`}
 										className="h-full w-full object-fill transition-transform duration-300 group-hover:scale-105"
