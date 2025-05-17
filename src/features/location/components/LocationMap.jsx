@@ -1,6 +1,22 @@
+import { useState } from "react";
 import { MapPin, Phone, Clock, Search } from "lucide-react";
+import { cities, outlets } from "../../../constants/locationData.js";
 
-const LocationMap = ({ searchQuery, setSearchQuery, activeCity, setActiveCity, outlets, cities }) => {
+const LocationMap = () => {
+	const [activeCity, setActiveCity] = useState("all");
+	const [searchQuery, setSearchQuery] = useState("");
+
+	// Filter outlets based on active city and search query
+	const filteredOutlets = outlets.filter(outlet => {
+		const matchesCity = activeCity === "all" || outlet.city === activeCity;
+		const matchesSearch =
+			searchQuery === "" ||
+			outlet.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+			outlet.address.toLowerCase().includes(searchQuery.toLowerCase());
+
+		return matchesCity && matchesSearch;
+	});
+
 	return (
 		<section className="section">
 			<div className="container-custom">
@@ -41,8 +57,8 @@ const LocationMap = ({ searchQuery, setSearchQuery, activeCity, setActiveCity, o
 				</div>
 				{/* Outlet List */}
 				<div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-					{outlets.length > 0 ? (
-						outlets.map(outlet => (
+					{filteredOutlets.length > 0 ? (
+						filteredOutlets.map(outlet => (
 							<div key={outlet.id} className="card p-6">
 								<h3 className="mb-4 text-xl font-bold">{outlet.name}</h3>
 								<div className="space-y-3">
