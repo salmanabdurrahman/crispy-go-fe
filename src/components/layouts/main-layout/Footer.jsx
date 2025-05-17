@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin, Github } from "lucide-react";
+import { Instagram, Youtube, Mail, Phone, MapPin, Github } from "lucide-react";
+import { BsTiktok } from "react-icons/bs";
 import { toast } from "react-hot-toast";
 import useNewsletter from "../../../hooks/useNewsletter";
 
@@ -45,28 +46,20 @@ const Footer = () => {
 								<Instagram className="h-4 w-4" />
 							</a>
 							<a
+								href="https://www.tiktok.com/@crispygo54"
+								target="_blank"
+								className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-crispygo-rust"
+								aria-label="Instagram"
+							>
+								<BsTiktok className="h-4 w-4" />
+							</a>
+							<a
 								href="https://github.com/salmanabdurrahman/crispy-go-fe"
 								target="_blank"
 								className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-crispygo-rust"
 								aria-label="Instagram"
 							>
 								<Github className="h-4 w-4" />
-							</a>
-							<a
-								href="#"
-								target="_blank"
-								className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-crispygo-rust"
-								aria-label="Facebook"
-							>
-								<Facebook className="h-4 w-4" />
-							</a>
-							<a
-								href="#"
-								target="_blank"
-								className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-crispygo-rust"
-								aria-label="Twitter"
-							>
-								<Twitter className="h-4 w-4" />
 							</a>
 							<a
 								href="#"
