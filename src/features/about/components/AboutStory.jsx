@@ -7,7 +7,7 @@ const AboutStory = () => {
 						<h2 className="mb-6 text-3xl font-bold">Cerita Kami</h2>
 						<div className="space-y-4">
 							<p>
-								CrispyGo didirikan pada tahun 2013 di Yogyakarta oleh sekelompok pecinta kuliner yang
+								CrispyGo didirikan pada tahun 2015 di Yogyakarta oleh sekelompok pecinta kuliner yang
 								memiliki visi untuk menghadirkan makanan crispy berkualitas tinggi dengan cita rasa
 								autentik khas Indonesia.
 							</p>

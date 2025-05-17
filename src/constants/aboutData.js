@@ -1,38 +1,45 @@
 const timelineData = [
 	{
-		year: 2013,
-		title: "Awal Mula",
+		year: 2015,
+		title: "Awal Berdiri",
 		description:
-			"CrispyGo didirikan di Yogyakarta dengan satu outlet kecil yang membawa konsep makanan crispy berkualitas dengan cita rasa khas Indonesia.",
-		position: "left", // for md:text-right
+			"CrispyGo resmi berdiri di Yogyakarta dengan outlet pertama yang mengusung konsep ayam crispy lokal yang terjangkau dan nikmat.",
+		position: "left",
 	},
 	{
-		year: 2015,
-		title: "Ekspansi Pertama",
+		year: 2017,
+		title: "Ekspansi Regional",
 		description:
-			"Membuka beberapa outlet baru di lokasi strategis seperti Bandung dan Jakarta, sekaligus memperluas jangkauan pasar.",
+			"Membuka outlet baru di kota-kota sekitar seperti Solo dan Semarang, mulai dikenal lewat cita rasa khas dan pelayanan cepat.",
 		position: "right",
 	},
 	{
-		year: 2018,
-		title: "Inovasi Menu",
+		year: 2019,
+		title: "Digitalisasi dan Inovasi Menu",
 		description:
-			"Meluncurkan beragam varian menu baru yang unik dan inovatif, serta mendapatkan pengakuan dari festival kuliner lokal.",
+			"Mulai menghadirkan sistem pemesanan digital dan meluncurkan varian menu baru seperti Ayam Crispy Lada Hitam dan Tahu Crispy Pedas.",
 		position: "left",
 	},
 	{
 		year: 2021,
-		title: "Ekspansi Nasional",
+		title: "Go Nasional",
 		description:
-			"Mulai memperluas jangkauan ke 10 kota besar di Indonesia dan memperkenalkan layanan pemesanan online berbasis web.",
+			"Merambah kota-kota besar lain seperti Jakarta, Bandung, dan Surabaya. Juga memperkenalkan layanan pesan antar lewat aplikasi dan website sendiri.",
 		position: "right",
 	},
 	{
 		year: 2023,
-		title: "Saat Ini",
+		title: "Brand Recognition",
 		description:
-			"CrispyGo telah menjadi salah satu brand makanan crispy yang dikenal luas dengan 10 outlet aktif di berbagai kota besar.",
+			"Menjadi brand ayam crispy lokal yang diperhitungkan, dengan 10+ outlet aktif dan banyak menu jadi favorit masyarakat.",
 		position: "left",
+	},
+	{
+		year: 2025,
+		title: "Menuju Masa Depan",
+		description:
+			"CrispyGo bersiap untuk ekspansi franchise nasional, serta mengembangkan sistem manajemen operasional dan layanan berbasis teknologi.",
+		position: "right",
 	},
 ];
 
