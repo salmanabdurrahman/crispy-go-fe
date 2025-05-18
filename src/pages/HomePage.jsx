@@ -11,10 +11,16 @@ import HomePartners from "../features/home/components/HomePartners.jsx";
 import HomeBlog from "../features/home/components/HomeBlog.jsx";
 import HomeFAQ from "../features/home/components/HomeFAQ.jsx";
 import AboutTimeline from "../features/about/components/AboutTimeline.jsx";
+import SEO from "../components/common/seo/SEO.jsx";
 
 const HomePage = () => {
 	return (
 		<>
+			<SEO
+				title="Crispy Go - Beranda"
+				description="Selamat datang di Crispy Go! Nikmati ayam goreng krispi kekinian yang renyah di luar, juicy di dalam. Pesan online atau datang langsung ke outlet terdekat."
+				keywords="crispy go, ayam goreng krispi, ayam kekinian, fried chicken Indonesia, ayam enak, kuliner ayam, makanan cepat saji, outlet ayam goreng"
+			/>
 			<HomeHero />
 			<HomeStats />
 			<HomeWhyChoose />

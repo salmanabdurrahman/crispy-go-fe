@@ -5,10 +5,16 @@ import AboutValues from "../features/about/components/AboutValues.jsx";
 import AboutTeam from "../features/about/components/AboutTeam.jsx";
 import AboutPartners from "../features/about/components/AboutPartners.jsx";
 import AboutCallToAction from "../features/about/components/AboutCallToAction.jsx";
+import SEO from "../components/common/seo/SEO.jsx";
 
 const AboutPage = () => {
 	return (
 		<>
+			<SEO
+				title="Crispy Go - Tentang Kami"
+				description="Crispy Go hadir sebagai solusi kuliner ayam krispi kekinian. Kenali cerita brand kami, visi misi, dan tim di balik kelezatan setiap gigitan."
+				keywords="tentang crispy go, profil perusahaan ayam goreng, kisah bisnis kuliner, sejarah crispy go, brand ayam krispi"
+			/>
 			<AboutHero />
 			<AboutStory />
 			<AboutTimeline />

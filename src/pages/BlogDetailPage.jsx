@@ -5,6 +5,7 @@ import BlogDetailHero from "../features/blog-detail/components/BlogDetailHero.js
 import BlogDetailArticle from "../features/blog-detail/components/BlogDetailArticle.jsx";
 import useBlogDetail from "../features/blog-detail/hooks/useBlogDetail.js";
 import LoadingSpinner from "./../components/common/spinner/LoadingSpinner";
+import SEO from "../components/common/seo/SEO.jsx";
 
 const BlogDetailPage = () => {
 	const { slug } = useParams();
@@ -14,6 +15,11 @@ const BlogDetailPage = () => {
 
 	return (
 		<>
+			<SEO
+				title={`Crispy Go - ${data?.title}`}
+				description={`${data?.excerpt}`}
+				keywords={`blog makanan, blog kuliner, lifestyle kuliner, crispy go blog, artikel ayam goreng, tips makan enak, cerita bisnis fnb, ${data?.title.split(" ").join(", ")}`}
+			/>
 			<BlogDetailHero article={data} />
 			<BlogDetailArticle article={data} />
 		</>
