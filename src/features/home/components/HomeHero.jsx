@@ -32,12 +32,12 @@ const HomeHero = () => {
 							</Link>
 						</div>
 					</div>
-					<div className="relative h-[300px] overflow-hidden rounded-lg md:h-[400px]">
+					<div className="relative flex h-[300px] items-center justify-center overflow-hidden rounded-lg md:h-[400px]">
 						<img
-							src="/placeholder.svg?height=400&width=500"
-							alt="CrispyGo Featured Product"
-							title="CrispyGo Featured Product"
-							className="h-full w-full rounded-lg object-cover"
+							src="/images/crispy-go-logo.webp"
+							alt="CrispyGo Logo"
+							title="CrispyGo Logo"
+							className="w-[70%] rounded-lg object-cover md:w-[73%]"
 							loading="lazy"
 						/>
 					</div>
