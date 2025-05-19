@@ -1,8 +1,12 @@
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
+import { FRONTEND_BASE_URL } from "../../../constants/appConfig.js";
 
 const SEO = ({ description, keywords, title }) => {
-	const currentUrl = useLocation().pathname;
+	const { pathname } = useLocation();
+	const currentUrl = `${FRONTEND_BASE_URL}${pathname}`;
+	const smallFavicon = `${FRONTEND_BASE_URL}/icons/favicon-16x16.png`;
+	const largeFavicon = `${FRONTEND_BASE_URL}/icons/favicon-32x32.png`;
 
 	const id = {
 		"@context": "https://schema.org",
@@ -15,7 +19,7 @@ const SEO = ({ description, keywords, title }) => {
 			name: "Crispy Go",
 			logo: {
 				"@type": "ImageObject",
-				url: "/icons/favicon-32x32.png",
+				url: `${FRONTEND_BASE_URL}/icons/favicon-32x32.png`,
 			},
 		},
 	};
@@ -28,21 +32,21 @@ const SEO = ({ description, keywords, title }) => {
 			<meta name="description" content={description} />
 			<meta name="keywords" content={keywords} />
 			<meta name="author" content="Salman Abdurrahman" />
-			<meta name="google-signin-client_id" content="" />
+			{/* <meta name="google-signin-client_id" content="" /> */}
 			{/* Open Graph / Facebook */}
 			<meta property="og:type" content="website" />
 			<meta property="og:url" content={currentUrl} />
 			<meta property="og:title" content={title} />
 			<meta property="og:description" content={description} />
-			<meta property="og:image" content="/icons/favicon-32x32.png" />
+			<meta property="og:image" content={largeFavicon} />
 			<meta property="og:locale" content="id_ID" />
 			{/* Structured Data */}
 			<script type="application/ld+json">{JSON.stringify(id)}</script>
 			{/* Canonical URL */}
 			<link rel="canonical" href={currentUrl} />
 			{/* Favicon */}
-			<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
-			<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+			<link rel="icon" type="image/png" sizes="32x32" href={largeFavicon} />
+			<link rel="icon" type="image/png" sizes="16x16" href={smallFavicon} />
 			<meta name="msapplication-TileColor" content="#ffffff" />
 			<meta name="theme-color" content="#ffffff" />
 			{/* Security Headers */}

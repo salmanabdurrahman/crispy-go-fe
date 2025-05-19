@@ -42,6 +42,7 @@ Website terdiri dari beberapa halaman utama yang bisa diakses pengguna melalui n
 Buat file `.env` dan isi seperti pada file `.env.example`. Jangan lupa sesuaikan untuk isinya:
 
 - `VITE_API_BASE_URL`: URL base untuk mengakses API aplikasi. Kamu dapat melihat kode API-nya di [repo berikut](https://github.com/salmanabdurrahman/crispy-go-be).
+- `FRONTEND_BASE_URL`: URL base untuk mengakses website frontend kamu.
 - `VITE_API_TOKEN`: Token untuk autentikasi akses API.
 - `VITE_TRACKING_ID`: ID untuk pelacakan analitik. Kamu dapat menggunakan Google Analytics untuk membuatnya.
 - `VITE_STORAGE_URL`: URL untuk akses penyimpanan data.
