@@ -50,7 +50,13 @@ const Navbar = () => {
 				<div className="flex items-center justify-between">
 					{/* Logo */}
 					<Link to="/" className="flex items-center">
-						<span className="text-[28px] font-extrabold text-crispygo-rust">CrispyGo</span>
+						<img
+							src="/icons/favicon-16x16.png"
+							alt="CrispyGo Logo"
+							className="mr-[2px] w-[44px]"
+							loading="lazy"
+						/>
+						<span className="text-[22px] font-extrabold text-crispygo-rust">CrispyGo</span>
 					</Link>
 					{/* Desktop Navigation */}
 					<nav className="hidden items-center space-x-6 lg:flex">

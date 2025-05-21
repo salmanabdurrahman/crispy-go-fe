@@ -34,10 +34,10 @@ const HomeHero = () => {
 					</div>
 					<div className="relative flex h-[300px] items-center justify-center overflow-hidden rounded-lg md:h-[400px]">
 						<img
-							src="/images/crispy-go-logo.webp"
+							src="/images/chicken.webp"
 							alt="CrispyGo Logo"
 							title="CrispyGo Logo"
-							className="w-[70%] rounded-lg object-cover md:w-[73%]"
+							className="w-[70%] rounded-lg object-cover md:w-[85%]"
 							loading="lazy"
 						/>
 					</div>
