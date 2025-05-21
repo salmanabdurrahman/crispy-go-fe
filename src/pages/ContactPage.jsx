@@ -9,9 +9,9 @@ const ContactPage = () => {
 	return (
 		<>
 			<SEO
-				title="Crispy Go - Hubungi Kami"
-				description="Punya pertanyaan, kritik, saran, atau mau ajukan kerja sama franchise? Hubungi tim Crispy Go lewat form atau sosial media kami!"
-				keywords="kontak crispy go, hubungi crispy go, cs crispy go, franchise ayam krispi, kontak bisnis kuliner"
+				title="CrispyGo - Hubungi Kami"
+				description="Punya pertanyaan, kritik, saran, atau mau ajukan kerja sama franchise? Hubungi tim CrispyGo lewat form atau sosial media kami!"
+				keywords="kontak crispygo, hubungi crispygo, cs crispygo, franchise ayam krispi, kontak bisnis kuliner"
 			/>
 			<ContactHero />
 			<ContactForm />

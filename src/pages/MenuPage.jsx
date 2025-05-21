@@ -9,9 +9,9 @@ const MenuPage = () => {
 	return (
 		<>
 			<SEO
-				title="Crispy Go - Menu"
-				description="Lihat semua menu Crispy Go! Dari ayam goreng krispi original, spicy, hingga paket hemat dengan nasi, saus, dan minuman. Cocok untuk makan sendiri atau rame-rame!"
-				keywords="menu ayam crispy, ayam goreng pedas, paket ayam hemat, menu crispy go, crispy chicken menu, makanan cepat saji, menu makanan Indonesia"
+				title="CrispyGo - Menu Ayam Krispi Premium"
+				description="Lihat semua menu CrispyGo! Dari ayam goreng krispi original, spicy, hingga paket hemat dengan nasi, saus, dan minuman. Cocok untuk makan sendiri atau rame-rame!"
+				keywords="menu ayam crispy, ayam goreng pedas, paket ayam hemat, menu crispygo, crispy chicken menu, makanan cepat saji, menu makanan Indonesia"
 			/>
 			<MenuHero />
 			<MenuList />

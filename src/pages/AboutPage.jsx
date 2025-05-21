@@ -11,9 +11,9 @@ const AboutPage = () => {
 	return (
 		<>
 			<SEO
-				title="Crispy Go - Tentang Kami"
-				description="Crispy Go hadir sebagai solusi kuliner ayam krispi kekinian. Kenali cerita brand kami, visi misi, dan tim di balik kelezatan setiap gigitan."
-				keywords="tentang crispy go, profil perusahaan ayam goreng, kisah bisnis kuliner, sejarah crispy go, brand ayam krispi"
+				title="CrispyGo - Tentang Kami"
+				description="CrispyGo hadir sebagai solusi kuliner ayam krispi kekinian. Kenali cerita brand kami, visi misi, dan tim di balik kelezatan setiap gigitan."
+				keywords="tentang crispygo, profil perusahaan ayam goreng, kisah bisnis kuliner, sejarah crispygo, brand ayam krispi"
 			/>
 			<AboutHero />
 			<AboutStory />

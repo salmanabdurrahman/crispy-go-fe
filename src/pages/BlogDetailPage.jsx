@@ -16,9 +16,9 @@ const BlogDetailPage = () => {
 	return (
 		<>
 			<SEO
-				title={`Crispy Go - ${data?.title}`}
+				title={`CrispyGo - ${data?.title}`}
 				description={`${data?.excerpt}`}
-				keywords={`blog makanan, blog kuliner, lifestyle kuliner, crispy go blog, artikel ayam goreng, tips makan enak, cerita bisnis fnb, ${data?.title.split(" ").join(", ")}`}
+				keywords={`blog makanan, blog kuliner, lifestyle kuliner, crispygo blog, artikel ayam goreng, tips makan enak, cerita bisnis fnb, ${data?.title.split(" ").join(", ")}`}
 			/>
 			<BlogDetailHero article={data} />
 			<BlogDetailArticle article={data} />

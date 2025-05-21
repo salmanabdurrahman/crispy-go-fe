@@ -8,9 +8,9 @@ const OrderPage = () => {
 	return (
 		<>
 			<SEO
-				title="Crispy Go - Pesan Sekarang"
-				description="Mau makan ayam krispi tanpa keluar rumah? Pesan online di Crispy Go sekarang juga. Cepat, mudah, dan tentunya enak!"
-				keywords="pesan ayam crispy, order makanan online, delivery crispy go, pesan ayam goreng online, makanan cepat saji online"
+				title="CrispyGo - Pesan Ayam Sekarang"
+				description="Mau makan ayam krispi tanpa keluar rumah? Pesan online di CrispyGo sekarang juga. Cepat, mudah, dan tentunya enak!"
+				keywords="pesan ayam crispy, order makanan online, delivery crispygo, pesan ayam goreng online, makanan cepat saji online"
 			/>
 			<OrderHero />
 			<OrderForm />

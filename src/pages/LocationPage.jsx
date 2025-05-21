@@ -9,9 +9,9 @@ const LocationPage = () => {
 	return (
 		<>
 			<SEO
-				title="Crispy Go - Lokasi Outlet"
-				description="Cari tahu lokasi outlet Crispy Go terdekat! Tersedia di berbagai kota dengan layanan makan di tempat, takeaway, dan delivery. Yuk mampir!"
-				keywords="lokasi crispy go, outlet ayam goreng, cabang crispy go, outlet makanan cepat saji, restoran ayam krispi"
+				title="CrispyGo - Lokasi Outlet Terdekat"
+				description="Cari tahu lokasi outlet CrispyGo terdekat! Tersedia di berbagai kota dengan layanan makan di tempat, takeaway, dan delivery. Yuk mampir!"
+				keywords="lokasi crispygo, outlet ayam goreng, cabang crispygo, outlet makanan cepat saji, restoran ayam krispi"
 			/>
 			<LocationHero />
 			<LocationMap />

@@ -17,9 +17,9 @@ const HomePage = () => {
 	return (
 		<>
 			<SEO
-				title="Crispy Go - Beranda"
-				description="Selamat datang di Crispy Go! Nikmati ayam goreng krispi kekinian yang renyah di luar, juicy di dalam. Pesan online atau datang langsung ke outlet terdekat."
-				keywords="crispy go, ayam goreng krispi, ayam kekinian, fried chicken Indonesia, ayam enak, kuliner ayam, makanan cepat saji, outlet ayam goreng"
+				title="CrispyGo - Ayam Goreng Krispi Kekinian, Renyahnya Gak Ada Lawan!"
+				description="Selamat datang di CrispyGo! Nikmati ayam goreng krispi kekinian yang renyah di luar, juicy di dalam. Pesan online atau datang langsung ke outlet terdekat."
+				keywords="crispygo, ayam goreng krispi, ayam kekinian, fried chicken Indonesia, ayam enak, kuliner ayam, makanan cepat saji, outlet ayam goreng"
 			/>
 			<HomeHero />
 			<HomeStats />

@@ -6,9 +6,9 @@ const NotFoundPage = () => {
 	return (
 		<>
 			<SEO
-				title="Crispy Go - Halaman Tidak Ditemukan"
+				title="CrispyGo - Halaman Tidak Ditemukan"
 				description="Maaf, halaman yang Anda cari tidak dapat ditemukan. Mungkin halaman telah dipindahkan atau dihapus."
-				keywords="halaman tidak ditemukan, 404, crispy go 404, crispygo 404, halaman tidak ada, error 404"
+				keywords="halaman tidak ditemukan, 404, crispygo 404, halaman tidak ada, error 404"
 			/>
 			<section className="flex min-h-screen flex-col items-center justify-center bg-crispygo-cream px-4 py-16">
 				<div className="max-w-lg text-center">

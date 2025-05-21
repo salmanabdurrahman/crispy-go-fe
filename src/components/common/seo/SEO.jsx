@@ -11,12 +11,12 @@ const SEO = ({ description, keywords, title }) => {
 	const id = {
 		"@context": "https://schema.org",
 		"@type": "WebSite",
-		name: "Crispy Go",
+		name: "CrispyGo",
 		url: currentUrl,
 		description: description,
 		publisher: {
 			"@type": "Organization",
-			name: "Crispy Go",
+			name: "CrispyGo",
 			logo: {
 				"@type": "ImageObject",
 				url: `${FRONTEND_BASE_URL}/icons/favicon-32x32.png`,
